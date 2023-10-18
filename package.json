@@ -1,0 +1,17 @@
+{
+  "name": "minimal-bun-repro",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun build ./index.ts --compile --outfile mycli && ./mycli"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "ink": "^4.4.1"
+  }
+}
